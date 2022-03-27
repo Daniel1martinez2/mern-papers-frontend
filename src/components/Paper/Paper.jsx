@@ -1,8 +1,12 @@
 import React from 'react'
+import styles from './Paper.module.css';
 
-const Paper = ({name}) => {
+const Paper = ({name, description}) => {
   return (
-    <h4>{name}</h4>
+    <div className={styles.paper}>
+      <h3>{name}</h3>
+      <p>{description}</p>
+    </div>
   )
 }
 
