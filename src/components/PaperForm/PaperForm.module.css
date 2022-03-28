@@ -31,4 +31,7 @@
   padding: .4em;
   border: none;
   border-radius: 4px;
+  background-color: #FF6B6B;
+  font-weight: bold;
+  color: white;
 }

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Paper from '../Paper/Paper.jsx';
 import PaperForm from '../PaperForm/PaperForm.jsx';
 import styles from './App.module.css';
-import {getPapers, postPaper} from '../../utils/api';
+import {getPapers, postPaper, postDeletePaper} from '../../utils/api';
 
 function App() {
   
@@ -20,6 +20,10 @@ function App() {
       .then(data => setPapers(data))
       .catch(err => console.log(err))
   }
+  const handleDeletePaper = (id) => {
+    postDeletePaper(id)
+      .then(data => setPapers(data))
+  }
   return (
     <>
       <PaperForm onAddPaper={addPaper}/>
@@ -28,7 +32,9 @@ function App() {
           <Paper 
             name={paper.name} 
             description={paper.description} 
+            id={paper._id.toString()}
             key={paper._id.toString()} 
+            deletePaper={handleDeletePaper}
           />
         ))}
       </div>

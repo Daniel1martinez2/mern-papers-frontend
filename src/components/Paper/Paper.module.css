@@ -3,8 +3,25 @@
   background-color: #2B2F39;
   color: #FEFFFF;
   border-radius: 10px;
+  position: relative;
 }
 
 .paper  p{
   color: #8a8f94;
+}
+
+.paper:hover{
+  background-color: #40444d;
+}
+
+.paper:hover .delete{
+  display: block;
+}
+
+.delete{
+  position: absolute;
+  right: .4em;
+  top: .4em;
+  cursor: pointer;
+  display: none;
 }
