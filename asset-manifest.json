@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mern-papers-frontend/static/css/main.10dd60d2.css",
-    "main.js": "/mern-papers-frontend/static/js/main.47acbae3.js",
+    "main.css": "/mern-papers-frontend/static/css/main.5acb96a5.css",
+    "main.js": "/mern-papers-frontend/static/js/main.7059da0e.js",
     "index.html": "/mern-papers-frontend/index.html",
-    "main.10dd60d2.css.map": "/mern-papers-frontend/static/css/main.10dd60d2.css.map",
-    "main.47acbae3.js.map": "/mern-papers-frontend/static/js/main.47acbae3.js.map"
+    "main.5acb96a5.css.map": "/mern-papers-frontend/static/css/main.5acb96a5.css.map",
+    "main.7059da0e.js.map": "/mern-papers-frontend/static/js/main.7059da0e.js.map"
   },
   "entrypoints": [
-    "static/css/main.10dd60d2.css",
-    "static/js/main.47acbae3.js"
+    "static/css/main.5acb96a5.css",
+    "static/js/main.7059da0e.js"
   ]
 }
