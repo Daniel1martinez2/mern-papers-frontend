@@ -1,6 +1,6 @@
 .papers-list{
   display: flex;
   flex-direction: column;
-  padding: 1em 0;
+  padding: 1em;
   gap: 1em;
 }

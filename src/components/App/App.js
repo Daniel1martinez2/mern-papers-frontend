@@ -22,7 +22,6 @@ function App() {
   }
   return (
     <>
-      <h1>MERN APP 🍎</h1>
       <PaperForm onAddPaper={addPaper}/>
       <div className={styles['papers-list']}>
         {papers && papers.map(paper => (

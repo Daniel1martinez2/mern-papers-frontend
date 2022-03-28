@@ -1,4 +1,10 @@
 .paper{
   padding: 1em;
-  background-color: rgb(221, 221, 221);
+  background-color: #2B2F39;
+  color: #FEFFFF;
+  border-radius: 10px;
+}
+
+.paper  p{
+  color: #8a8f94;
 }

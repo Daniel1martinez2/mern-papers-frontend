@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import styles from './PaperForm.module.css';
 
 const PaperForm = ({onAddPaper}) => {
   const handleSubmit = (e) => {
@@ -15,17 +16,19 @@ const PaperForm = ({onAddPaper}) => {
     description.value = '';
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <label>
-        <p>Title</p>
-        <input type="text" name="title"/>
-      </label>
-      <label>
-        <p>Description</p>
-        <input type="text" name="description"/>
-      </label>
-      <button type="submit">Add paper</button>
-    </form>
+    <div className={styles['form-wrapper']}>  
+      <form onSubmit={handleSubmit} className={styles.form}>
+        <label>
+          <p>Title</p>
+          <input type="text" name="title"/>
+        </label>
+        <label>
+          <p>Description</p>
+          <input type="text" name="description"/>
+        </label>
+        <button type="submit">✏️ Add paper</button>
+      </form>
+    </div>
   )
 }
 
