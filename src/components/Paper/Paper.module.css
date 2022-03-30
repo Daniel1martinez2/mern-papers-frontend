@@ -4,6 +4,10 @@
   color: #FEFFFF;
   border-radius: 10px;
   position: relative;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
 }
 
 .paper  p{

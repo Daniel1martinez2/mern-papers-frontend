@@ -4,16 +4,18 @@ import styles from './PaperForm.module.css';
 const PaperForm = ({onAddPaper}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    const {title, description} = e.target;
+    const {title, description, link} = e.target;
     console.log(title.value, description.value);
     onAddPaper({
       name: title.value,
       description: description.value,
-      tags: ['nice', 'good']
+      tags: ['nice', 'good'],
+      link: link.value
     })
 
     title.value = '';
     description.value = '';
+    link.value = '';
   }
   return (
     <div className={styles['form-wrapper']}>  
@@ -25,6 +27,10 @@ const PaperForm = ({onAddPaper}) => {
         <label>
           <p>Description</p>
           <input type="text" name="description"/>
+        </label>
+        <label>
+          <p>Link</p>
+          <input type="text" name="link"/>
         </label>
         <button type="submit">✏️ Add paper</button>
       </form>

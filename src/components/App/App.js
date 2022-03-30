@@ -34,6 +34,7 @@ function App() {
             description={paper.description} 
             id={paper._id.toString()}
             key={paper._id.toString()} 
+            link={paper.link}
             deletePaper={handleDeletePaper}
           />
         ))}
